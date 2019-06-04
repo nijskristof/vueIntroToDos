@@ -23,6 +23,7 @@ export default {
                 completed: false
             }
             this.$emit('add-todo', newToDo);
+            this.title = "";
         }
     },
     data(){
