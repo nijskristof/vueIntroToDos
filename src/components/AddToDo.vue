@@ -14,6 +14,9 @@ export default {
     methods:{
         addToDo(e){
             e.preventDefault();
+            if(this.title === ""){
+                return;
+            }
             const newToDo={
                 id: uuid.v4(),
                 title: this.title,
